@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #0a0a0a7e;
+        }
+        .con{
+            margin-top: 15vh;
+            display: grid;
+            justify-content: center;
+        }
+        h2{
+            text-align: center;
+        }
+        h2 span{
+            color: aliceblue;
+        }
+        button{
+            margin-top: 10vh;
+            padding: 5px 0;
+            background-color: #4b3737;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: bisque;
+            box-shadow: 6px 6px 6px rgba(37, 35, 35, 0.5);
+        }
+        #Rock:hover{
+            transform-origin: center;
+            rotate: 15deg;
+            transform: translate(20px);
+            transition: all 5s ease-in-out;
+        }
+        #Paper:hover{
+            transform-origin: center;
+            rotate: -15deg;
+            transform: translate(-20px);
+            transition: all 2s ease-in-out;
+        }
+        #Scissor:hover{
+            transform-origin: center;
+            rotate: 15deg;
+            transform: translate(20px);
+            transition: all 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <h2>Computer Choice : <span id="computer-choice"></span></h2>
+        <br>
+        <h2>User Choice : <span id="user-choice"></span></h2>
+
+        <button id="Rock">Rock</button>
+        <button id="Paper">Paper</button>
+        <button style="margin-bottom: 10vh;" id="Scissor">Scissor</button>
+        <h2 class="resultData">Result : <span id="result"></span></h2>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
